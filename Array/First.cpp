@@ -2,20 +2,18 @@
 using namespace std;
 
 int main(){
-    int a[5];
+    int a[]={},n;
+    cout<<"Enter no of elements:";
+    cin>>n;
 
-    cout << "Enter 5 numbers: " << endl;
-
-    //  store input from user to array
-    for (int i = 0; i < 5; ++i) {
+    cout << "Enter numbers: " << endl;
+    for (int i = 0; i <= n; ++i) {
         cin >> a[i];
     }
 
-    cout << "The a are: ";
-
-    //  print array elements
-    for (int n = 0; n < 5; ++n) {
-        cout << a[n] << "  ";
+    cout << "The elements are: "<<endl;
+    for (int j = 1; j <= n; j++) {
+    cout <<j <<":" << a[j] <<endl;
     }
 
     return 0;
