@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+main()
+{
+ //C program for linear search
+ 
+ int *a,i,itm,s,flag=0;
+ 
+ printf("==================================");
+ printf("\nC++ Program For Linear Search\n");
+ printf("==================================\n");
+ 
+ printf("\nEnter The Size Of An Array :");
+ 
+ scanf("%d",&s);
+ 
+ a=(int*)malloc(s*sizeof(int));
+ 
+ printf("\nEnter An Elements Of An Array\n");
+ 
+ for(i=0;i<s;i++)
+ {
+ scanf("%d",&a[i]);
+ }
+ 
+ printf("\nEnter The Number You Want To Search In An Array :");
+ scanf("%d",&itm);
+ 
+ for(i=0;i<s;i++)
+ {
+ if(a[i]==itm)
+ {
+ flag=1;
+ }
+ }
+ 
+ if(flag==1)
+ {
+ printf("\nNumber Found In an Array \n");
+ }
+ else 
+ {
+ printf("\nNumber Not Found In an Array \n");
+ }
+}
